@@ -17,7 +17,7 @@ public class TestController {
 
     @GetMapping("/")
     public String getData() throws JsonProcessingException {
-        System.out.println("this is just a simple project for illustrating mapper funcationalities");
+        System.out.println("this is just a simple project for illustrating mapper functionalities");
         converterService.convert();
         return "success";
     }
