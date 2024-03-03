@@ -37,6 +37,7 @@ public class ConverterService {
         source.setCharacteristics(rcharac);
 
         Destination output = sourceDestinationMapper.convert(source);
+        System.out.println("tried converting an object to list in the mapper response");
         System.out.println(new ObjectMapper().writeValueAsString(output));
 
     }
