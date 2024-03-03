@@ -17,8 +17,9 @@ public class TestController {
 
     @GetMapping("/")
     public String getData() throws JsonProcessingException {
-        System.out.println("this is just a simple project for illustrating map struct functionalities");
+        System.out.println("This is just a simple project for illustrating map struct functionalities");
         converterService.convert();
+        System.out.println("always return success");
         return "success";
     }
 
