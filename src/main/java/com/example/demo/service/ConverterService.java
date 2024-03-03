@@ -31,6 +31,7 @@ public class ConverterService {
         NameValuePair n1 = NameValuePair.builder().value("v1").name("n1").valueType("vt1").build();
         NameValuePair n2 = NameValuePair.builder().value("v2").name("n2").valueType("vt2").build();
         NameValuePair n3 = NameValuePair.builder().value("v3").name("n3").valueType("vt3").build();
+        NameValuePair n4 = NameValuePair.builder().value("v4").name("n4").valueType("vt4").build();
 
         RCharacteristics rcharac = RCharacteristics.builder().geocode(n1).nextcode(n2).productcode(n3).build();
 
