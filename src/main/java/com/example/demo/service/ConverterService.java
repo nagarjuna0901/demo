@@ -22,7 +22,7 @@ public class ConverterService {
 
         Source source = Source.builder().id("testid").name("testname").atType("testType").build();
         List<MultipleElements> multiple = new ArrayList<>();
-        for (int i=0;i<5;i++)
+        for (int i=0;i<6;i++)
         {
             MultipleElements multipleElements = MultipleElements.builder().name("mn"+i).id("mi"+i).href("mh"+i).build();
             multiple.add(multipleElements);
@@ -31,6 +31,7 @@ public class ConverterService {
         NameValuePair n1 = NameValuePair.builder().value("v1").name("n1").valueType("vt1").build();
         NameValuePair n2 = NameValuePair.builder().value("v2").name("n2").valueType("vt2").build();
         NameValuePair n3 = NameValuePair.builder().value("v3").name("n3").valueType("vt3").build();
+        NameValuePair n5 = NameValuePair.builder().value("v5").name("n5").valueType("vt5").build();
 
         RCharacteristics rcharac = RCharacteristics.builder().geocode(n1).nextcode(n2).productcode(n3).build();
 
@@ -38,6 +39,7 @@ public class ConverterService {
 
         Destination output = sourceDestinationMapper.convert(source);
         System.out.println("tried converting an object to list in the mapper response");
+        System.out.println("Adding additional loggers");
         System.out.println(new ObjectMapper().writeValueAsString(output));
 
     }
