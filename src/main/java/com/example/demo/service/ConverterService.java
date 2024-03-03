@@ -22,7 +22,7 @@ public class ConverterService {
 
         Source source = Source.builder().id("testid").name("testname").atType("testType").build();
         List<MultipleElements> multiple = new ArrayList<>();
-        for (int i=0;i<6;i++)
+        for (int i=0;i<5;i++)
         {
             MultipleElements multipleElements = MultipleElements.builder().name("mn"+i).id("mi"+i).href("mh"+i).build();
             multiple.add(multipleElements);
