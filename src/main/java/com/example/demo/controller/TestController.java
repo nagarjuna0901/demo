@@ -19,7 +19,7 @@ public class TestController {
     public String getData() throws JsonProcessingException {
         System.out.println("This is just a simple project for illustrating map struct functionalities");
         converterService.convert();
-        System.out.println("always return success");
+        System.out.println("Always return success, no matter the response!!");
         return "success";
     }
 
